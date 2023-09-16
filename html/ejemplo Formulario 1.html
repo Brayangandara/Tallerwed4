@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario 1</title>
+</head>
+<body>
+    <h1>Ejemplo Formulario 1</h1>
+
+    <form action="">
+        <fieldset>
+            
+            <input type="text" pattern="[A-Za-z ]{1,60}" size="35" placeholder="NAME" >
+            <input type="text" size="35" placeholder="COMPANY" > <br> <br>
+            <input type="text" pattern="\+\d{2}-\d{3}-\d{9}" size="35" placeholder="TELEPHONE" >
+            <input type="email" id="email" placeholder="EMAIL" maxlength="30" pattern=".+@gmail.com" size="30" required/><br>
+            <br>
+            <textarea cols="71" rows="10" placeholder="LEAVE A MESSAGE"></textarea><br>
+            <input type="submit" value="SEND"> 
+
+        </fieldset>
+    </form>
+</body>
+</html>

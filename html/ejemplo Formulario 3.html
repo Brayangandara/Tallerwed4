@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+</head>
+<body>
+    <h1>Formulario 3</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>Account Type:</td>
+                <td>
+                    <label><input type="radio" name="account_type" value="Individual"> Individual</label>
+                    <label><input type="radio" name="account_type" value="Entity"> Entity</label>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" name="first_name" required pattern="(Mr|Ms|Mrs) [A-Za-z]+ [A-Za-z]+"required placeholder="Mr. Brayan Vergara">
+                </td>
+            </tr>
+            <tr>
+                <td>Middle Name:</td>
+                <td>
+                    <input type="text" name="middle_name" required pattern="[A-Z][a-z]"  required placeholder="Ar">
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" name="last_name" required pattern="(Mr|Ms|Mrs) [A-Za-z]+ {0,3}[A-Za-z]+" required placeholder="Mr. Brayan Vergara">
+                </td>
+            </tr>
+            <tr>
+                <td>Suffix:</td>
+                <td>
+                    <select name="suffix" required>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    <select name="state" required>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlántico">Atlántico</option>
+                        <option value="Bolívar">Bolívar</option>
+                        <option value="Boyacá">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caquetá">Caquetá</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Chocó">Chocó</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Huila">Huila</option>
+                        <option value="La Guajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Nariño">Nariño</option>
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindío">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés">Vaupés</option>
+                        <option value="Vichada">Vichada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Zip Code:</td>
+                <td>
+                    <input type="text" name="zip_code" required pattern="[0-9]{6}([0-9]{4})?" placeholder="123456-7891">
+                </td>
+            </tr>
+            <tr>
+                <td>Home Phone:</td>
+                <td>
+                    <input type="text" name="home_phone" required pattern="\+\d{2} \d{3} \d{7}" required placeholder="+57 123 4567890">
+                </td>
+            </tr>
+            <tr>
+                <td>ID Number:</td>
+                <td>
+                    <input type="text" name="id_number" required pattern="D\d+" placeholder="D12">
+                </td>
+            </tr>
+            <tr>
+                <td>Expiration Date:</td>
+                <td>
+                    <input type="text" name="expiration_date" required pattern="(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])-20\d{2}"required placeholder="mm/dd/yyyy">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

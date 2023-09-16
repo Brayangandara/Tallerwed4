@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <h1>Formulario 2</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>User id:</td>
+                <td><input type="text" required minlength="5" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" required minlength="7" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" required pattern="[A-Za-z\s]+"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select required>
+                        <option value="" disabled selected>(Please select a country)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ZIP Code:</td>
+                <td><input type="text" required pattern="[0-9]+"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <label><input type="radio" value="Male"> Male</label>
+                    <label><input type="radio" value="Female" > Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Language:</td>
+                <td>
+                    <label><input type="radio" name="language" value="English" checked > English</label>
+                    <label><input type="radio" name="language" value="Non English" > Non English</label>
+                </td>
+            </tr>
+            <tr>
+                <td>About:</td>
+                <td><textarea rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
